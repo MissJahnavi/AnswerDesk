@@ -1,0 +1,364 @@
+/* Agent workspace: flat Stack Overflow-inspired dark styling */
+.agent-dashboard {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  color: #e3e6e8;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.agent-dashboard * {
+  box-sizing: border-box;
+}
+.ad-dashboard-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 4px 0 24px;
+  padding-bottom: 21px;
+  border-bottom: 1px solid #343839;
+}
+.ad-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  color: #a5acb0;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+.ad-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #0a95ff;
+}
+.agent-dashboard .ad-dashboard-header h1 {
+  margin: 0 0 8px;
+  color: #f1f2f3;
+  font-size: clamp(26px, 3vw, 34px);
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+.ad-dashboard-subtitle {
+  max-width: 640px;
+  margin: 0;
+  color: #a5acb0;
+  font-size: 13px;
+  line-height: 1.65;
+}
+.ad-header-count {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  padding: 10px 12px;
+  color: #a5acb0;
+  background: #151718;
+  border: 1px solid #343839;
+  border-radius: 3px;
+  font-size: 11px;
+}
+.ad-count-number {
+  color: #e3e6e8;
+  font-size: 19px;
+  font-weight: 700;
+}
+.ad-metrics {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+  margin-bottom: 29px;
+}
+.ad-metric-card {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  padding: 14px 15px;
+  background: #151718;
+  border: 1px solid #343839;
+  border-top: 2px solid #51585b;
+  border-radius: 3px;
+}
+.ad-metric-label {
+  min-height: 28px;
+  color: #a5acb0;
+  font-size: 11px;
+  line-height: 1.4;
+}
+.ad-metric-value {
+  color: #f1f2f3;
+  font-size: 25px;
+  line-height: 1;
+  font-weight: 700;
+}
+.ad-tone-blue {
+  border-top-color: #0a95ff;
+}
+.ad-tone-blue .ad-metric-value {
+  color: #6bbbf7;
+}
+.ad-tone-amber {
+  border-top-color: #e3b341;
+}
+.ad-tone-amber .ad-metric-value {
+  color: #e3b341;
+}
+.ad-tone-violet {
+  border-top-color: #9b8afb;
+}
+.ad-tone-violet .ad-metric-value {
+  color: #b5a8ff;
+}
+.ad-tone-green {
+  border-top-color: #4cae74;
+}
+.ad-tone-green .ad-metric-value {
+  color: #73d49a;
+}
+.ad-tone-red {
+  border-top-color: #e46b72;
+}
+.ad-tone-red .ad-metric-value {
+  color: #ff9298;
+}
+.ad-ticket-section {
+  min-width: 0;
+}
+.ad-section-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 15px;
+}
+.ad-section-heading h2 {
+  margin: 0 0 6px;
+  color: #e3e6e8;
+  font-size: 19px;
+}
+.ad-section-heading p {
+  margin: 0;
+  color: #8f989d;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.ad-result-count {
+  color: #a5acb0;
+  font-size: 11px;
+  white-space: nowrap;
+}
+.agent-dashboard .ticket-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0;
+}
+.agent-dashboard .ticket-filters input,
+.agent-dashboard .ticket-filters select,
+.agent-dashboard .ticket-filters button {
+  min-height: 36px;
+  padding: 8px 11px;
+  color: #e3e6e8;
+  background: #0c0d0e;
+  border: 1px solid #51585b;
+  border-radius: 3px;
+  font-size: 12px;
+}
+.agent-dashboard .ticket-filters input {
+  flex: 1 1 200px;
+}
+.agent-dashboard .ticket-filters button {
+  color: #fff;
+  background: #0a95ff;
+  border-color: #0a95ff;
+  font-weight: 700;
+}
+.agent-dashboard .ticket-filters button:hover {
+  background: #0074cc;
+}
+.ad-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #343839;
+  border-radius: 3px;
+}
+.agent-dashboard .ticket-table {
+  width: 100%;
+  min-width: 650px;
+  margin: 0;
+  border: 0;
+  border-collapse: collapse;
+  background: #151718;
+  font-size: 12px;
+}
+.agent-dashboard .ticket-table th {
+  padding: 12px 13px;
+  color: #c4c9cc;
+  background: #202324;
+  border: 0;
+  border-bottom: 1px solid #3a3f40;
+  font-size: 10px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+.agent-dashboard .ticket-table td {
+  padding: 12px 13px;
+  color: #d6d9db;
+  background: #151718;
+  border: 0;
+  border-bottom: 1px solid #292d2e;
+}
+.agent-dashboard .ticket-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+.agent-dashboard .ticket-table tbody tr:hover td {
+  background: #1d2021;
+}
+.agent-dashboard .ticket-table a {
+  color: #6bbbf7;
+}
+.agent-dashboard .ticket-table a:hover {
+  color: #9bd1ff;
+}
+.agent-dashboard .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  color: #a5acb0;
+  font-size: 12px;
+}
+.agent-dashboard .pagination button {
+  min-height: 34px;
+  padding: 7px 12px;
+  color: #d6d9db;
+  background: #202324;
+  border: 1px solid #51585b;
+  border-radius: 3px;
+}
+.agent-dashboard .pagination button:hover:not(:disabled) {
+  background: #343839;
+}
+.ad-state {
+  min-height: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+  padding: 22px;
+  color: #a5acb0;
+  background: #151718;
+  border: 1px solid #343839;
+  border-radius: 3px;
+  font-size: 12px;
+}
+.ad-state strong {
+  color: #e3e6e8;
+  font-size: 14px;
+}
+.ad-state-error {
+  color: #ff9a9f;
+  border-color: #633238;
+  background: #241719;
+}
+.ad-spinner {
+  width: 23px;
+  height: 23px;
+  border: 3px solid #343839;
+  border-top-color: #0a95ff;
+  border-radius: 50%;
+  animation: ad-dashboard-spin 0.8s linear infinite;
+}
+@keyframes ad-dashboard-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 1050px) {
+  .ad-metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 650px) {
+  .ad-dashboard-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .ad-header-count {
+    align-self: flex-start;
+  }
+  .ad-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+  }
+  .ad-metric-card {
+    padding: 12px;
+    gap: 10px;
+  }
+  .ad-metric-value {
+    font-size: 22px;
+  }
+  .ad-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .agent-dashboard .ticket-filters input {
+    flex-basis: 100%;
+  }
+}
+
+
+.ad-unassigned-section {
+  margin-bottom: 32px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #343839;
+}
+
+.ad-claim-button {
+  min-height: 32px;
+  padding: 7px 10px;
+  color: #fff;
+  background: #0a95ff;
+  border: 1px solid #0a95ff;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ad-claim-button:hover:not(:disabled) {
+  background: #0074cc;
+  border-color: #0074cc;
+}
+
+.ad-claim-button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.ad-claim-success {
+  margin: 12px 0;
+  padding: 12px 14px;
+  color: #73d49a;
+  background: #14251b;
+  border: 1px solid #28553a;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.ad-unassigned-section .ad-table-wrap {
+  margin-top: 14px;
+}

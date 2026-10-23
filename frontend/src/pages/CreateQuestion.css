@@ -1,0 +1,26 @@
+/* Ask a Question form — flat dark forum style */
+.create-question-page { width:min(900px,100%); margin:0 auto; padding:4px 0 48px; color:#e3e6e8; font-family:Arial,Helvetica,sans-serif; }
+.create-question-page * { box-sizing:border-box; }
+.cq-eyebrow { display:flex; align-items:center; gap:8px; margin:0 0 20px; color:#a5acb0; font-size:10px; font-weight:700; letter-spacing:.7px; }
+.cq-dot { width:6px; height:6px; border-radius:50%; background:#0a95ff; }
+.cq-back-link { display:inline-block; margin-bottom:20px; color:#6bbbf7; font-size:13px; }
+.cq-back-link:hover { color:#9bd1ff; }
+.cq-header { padding-bottom:20px; border-bottom:1px solid #343839; }
+.create-question-page .cq-header h1 { margin:0 0 8px; color:#f1f2f3; font-size:clamp(27px,3vw,34px); line-height:1.25; }
+.cq-header p { margin:0; color:#a5acb0; font-size:13px; line-height:1.7; }
+.cq-form { display:flex; flex-direction:column; gap:22px; margin-top:23px; padding:22px; background:#151718; border:1px solid #343839; border-radius:3px; }
+.cq-field { display:flex; flex-direction:column; gap:9px; width:100%; }
+.cq-field label { color:#e3e6e8; font-size:13px; font-weight:700; }
+.cq-input,.cq-textarea { display:block; width:100%; padding:11px 12px; color:#e3e6e8; background:#0c0d0e; border:1px solid #51585b; border-radius:3px; font:13px/1.6 Arial,Helvetica,sans-serif; }
+.cq-input { min-height:43px; }
+.cq-textarea { min-height:190px; resize:vertical; }
+.cq-input:focus,.cq-textarea:focus { border-color:#6bbbf7; outline:1px solid #6bbbf7; }
+.cq-input::placeholder,.cq-textarea::placeholder { color:#858e93; }
+.cq-hint { color:#8f989d; font-size:11px; line-height:1.5; }
+.cq-form-footer { display:flex; align-items:center; justify-content:space-between; gap:15px; padding-top:16px; border-top:1px solid #292d2e; }
+.cq-required-note { color:#8f989d; font-size:11px; }
+.cq-submit { display:inline-flex; align-items:center; justify-content:center; min-height:38px; padding:0 15px; color:#fff; background:#0a95ff; border:1px solid #0a95ff; border-radius:3px; font-size:13px; font-weight:700; cursor:pointer; }
+.cq-submit:hover:not(:disabled) { background:#0074cc; border-color:#0074cc; }
+.cq-submit:disabled { cursor:not-allowed; opacity:.55; }
+.cq-error { margin:18px 0 0; padding:11px 13px; color:#ffb4b8; background:#3b2023; border:1px solid #633238; border-radius:3px; font-size:12px; line-height:1.6; }
+@media(max-width:650px){.create-question-page{padding-bottom:30px}.cq-form{padding:16px 13px;gap:19px}.cq-textarea{min-height:165px}.cq-form-footer{align-items:flex-start;flex-direction:column-reverse}}
